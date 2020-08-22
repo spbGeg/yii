@@ -1,0 +1,30 @@
+2020/08/22 09:15:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'popups' already exists. The SQL statement executed was: CREATE TABLE `popups` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255),
+	`description` text,
+	`count_show` int(11),
+	`status` tinyint(1)
+).
+2020/08/22 09:15:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'popups' already exists. The SQL statement executed was: CREATE TABLE `popups` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(255),
+	`description` text,
+	`count_show` int(11),
+	`status` tinyint(1)
+) in D:\locallwebserver\domains\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 D:\locallwebserver\domains\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('popups', Array, NULL)
+#2 D:\locallwebserver\domains\yii\protected\migrations\m200822_061441_create_popups_table.php(8): CDbMigration->createTable('popups', Array)
+#3 D:\locallwebserver\domains\yii\framework\cli\commands\MigrateCommand.php(415): m200822_061441_create_popups_table->up()
+#4 D:\locallwebserver\domains\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m200822_061441_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\locallwebserver\domains\yii\framework\console\CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\locallwebserver\domains\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\locallwebserver\domains\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#10 D:\locallwebserver\domains\yii\framework\yiic.php(33): CApplication->run()
+#11 D:\locallwebserver\domains\yii\protected\yiic.php(7): require_once('D:\\locallwebser...')
+#12 D:\locallwebserver\domains\yii\protected\yiic(4): require_once('D:\\locallwebser...')
+#13 {main}
+---
