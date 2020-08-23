@@ -24,7 +24,7 @@ return array(
 
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'123',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
@@ -40,7 +40,7 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-
+/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -49,7 +49,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-
+*/
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),

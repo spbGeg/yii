@@ -27,12 +27,18 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
-	}
 
-	/**
+//        $dataProvider=new CActiveDataProvider('Popups');
+//        $this->render('index',array(
+//            'dataProvider'=>$dataProvider
+//        ,
+//        ));
+
+        $this->render('index');
+
+    }
+
+    /**
 	 * This is the action to handle external exceptions.
 	 */
 	public function actionError()
@@ -45,6 +51,10 @@ class SiteController extends Controller
 				$this->render('error', $error);
 		}
 	}
+
+
+
+
 
 	/**
 	 * Displays the contact page
