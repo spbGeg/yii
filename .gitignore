@@ -5,6 +5,7 @@
 nbproject/
 nbactions.xml
 nb-configuration.xml
+protected/config/database.php
 
 *.pydevproject
 .project

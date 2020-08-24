@@ -126,6 +126,11 @@ class PopupsController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Popups');
+
+
+		
+
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
