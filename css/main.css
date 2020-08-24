@@ -26,6 +26,7 @@ body
 #content
 {
     padding: 20px;
+	min-height: 700px;
 
 }
 
@@ -305,3 +306,19 @@ div.search-form
 	color: white;
 }
 
+.github{
+	width: 100px;
+
+	margin: 0 auto;
+	display: flex;
+	padding-bottom: 30px;
+}
+.github img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+.github a{
+	align-items: center;
+	display: inherit;
+}
