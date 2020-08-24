@@ -127,10 +127,6 @@ class PopupsController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('Popups');
 
-
-		
-
-
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

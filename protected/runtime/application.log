@@ -845,3 +845,13 @@ Stack trace:
 REQUEST_URI=/index.php?r=popups/index
 in /home/s/spbromanov/test2_detskiypsy_ru/public_html/protected/controllers/PopupsController.php (131)
 in /home/s/spbromanov/test2_detskiypsy_ru/public_html/index.php (13)
+2020/08/24 18:16:50 [error] [exception.ParseError] ParseError: syntax error, unexpected '<<' (T_SL) in /home/s/spbromanov/test2_detskiypsy_ru/public_html/protected/controllers/PopupsController.php:131
+Stack trace:
+#0 /home/s/spbromanov/test2_detskiypsy_ru/public_html/framework/web/CWebApplication.php(276): CWebApplication->createController('index/')
+#1 /home/s/spbromanov/test2_detskiypsy_ru/public_html/framework/web/CWebApplication.php(141): CWebApplication->runController('popups/index')
+#2 /home/s/spbromanov/test2_detskiypsy_ru/public_html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /home/s/spbromanov/test2_detskiypsy_ru/public_html/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=popups/index
+HTTP_REFERER=http://test2.detskiypsy.ru/index.php?r=site/index
+---
