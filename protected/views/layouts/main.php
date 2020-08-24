@@ -52,10 +52,18 @@
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> Romanov Vadim<br/>
 
-		<?php echo Yii::powered(); ?>
+		<?php echo Yii::powered(); ?><br/>
+
 	</div><!-- footer -->
+	<div class="github">
+		<a href="https://github.com/spbGeg/yii.git">
+			Github<img src="/images/github.png" alt="Github">
+		</a>
+	</div>
+
 
 </div><!-- page -->
+
 
 </body>
 </html>
