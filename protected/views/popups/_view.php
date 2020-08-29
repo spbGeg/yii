@@ -23,8 +23,9 @@
 		  else echo "Неативно";
 	?>
 	<br />
+	<p><?php  ?></p>
 
-	<p>Протестировать окно <a href='<?php echo "index.php?r=popups/view&id=". $data->id ; ?>'>
+	<p>Протестировать окно <a href='<?php echo CHtml::normalizeUrl(array('view', 'id' =>$data->id)); ?>'>
 			<button class="btn btn-primary">Тестировать</button>
 		</a></p>
 

@@ -8,7 +8,7 @@ $this->pageTitle=Yii::app()->name;
 
 <p>В данном приложении вы можете подключить всплывающее окошко на ваш сайт</p>
 
-<p>Выбирете интересующее вас окошко  <a href="/index.php?r=popups/index">
+<p>Выбирете интересующее вас окошко  <a href="<?php echo CHtml::normalizeUrl(array('popups/index')); ?>">
 		<button class="btn btn-success button">Перейти</button>
 	</a></p>
 
