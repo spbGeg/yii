@@ -39,10 +39,27 @@ class PopupsController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
+			array('allow', // allow guest user to perform 'admin' and 'delete' actions
+				'users'=>array('*'),
+				'actions'=>array('guest'),
+				'users'=>array('?'),
+			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
 		);
+	}
+
+
+
+
+	/**
+	 * Displays a particular model.
+	 * @param integer $id the ID of the model to be displayed
+	 */
+	public function actionGuest()
+	{
+		echo 111;
 	}
 
 	/**
@@ -125,7 +142,17 @@ class PopupsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Popups');
+		$criteria = new CDbCriteria;
+		$criteria->order = 'id ASC';
+		
+		$dataProvider = new CActiveDataProvider(
+			'Popups', array(
+				'criteria'	 => $criteria,
+				'pagination' => array(
+									'pageSize' => 3,
+									),
+							)
+		);
 
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -158,7 +185,7 @@ class PopupsController extends Controller
 	{
 		$model=Popups::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Страница не найдена :( ');
 		return $model;
 	}
 

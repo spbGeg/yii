@@ -3,7 +3,7 @@
 /* @var $model Popups */
 
 $this->breadcrumbs = array(
-    'Popups' => array('index'),
+    'Окошки' => array('index'),
     $model->name,
 );
 
@@ -60,7 +60,7 @@ $this->menu = array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'name',
+		'name',		'name'=> array(			'label'=> 'Имя окна',			'type' => 'raw',			'value' => $model->name,			),
 		'description',
 		'count_show',
 		'status',

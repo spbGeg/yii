@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Popups',
+	'Окошки',
 );
 
 $this->menu=array(
