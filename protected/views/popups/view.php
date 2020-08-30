@@ -20,7 +20,7 @@ $this->menu = array(
 
 <?php if( $model->status == 1){?>
 
-<p>Для того чтобы снова увидеть модальное окно перезагрузите страницу</p>
+<p>Через 10 сек. появится окно, подождите пожалуйста.</p>
 
 
 <div id="myModal" class="modal" style="display:none;">
@@ -45,8 +45,8 @@ $this->menu = array(
 	//take modal window
     var modal = document.getElementById('myModal');
 
-    setTimeout(() => modal.style.display = "block", 1000); // show modal window
-    setTimeout(() => modal.style.display = "none", 4000); // hide modal window
+    setTimeout(() => modal.style.display = "block", 10000); // show modal window
+    setTimeout(() => modal.style.display = "none", 14000); // hide modal window
 
 
 </script>

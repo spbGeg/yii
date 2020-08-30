@@ -23,10 +23,19 @@ body
 	border-top: 3px solid #C9E0ED;
 }
 
+.logo img{
+	width: 100px;
+}
+.logo h5{
+	font-family: 'Caveat', cursive;
+	font-size: 30px;
+	color: #0677c7;
+}
 #content
 {
     padding: 20px;
 	min-height: 700px;
+	max-width: 540px;
 
 }
 
@@ -52,7 +61,7 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+
 }
 
 #mainmenu ul
@@ -68,9 +77,9 @@ body
 
 #mainmenu ul li a
 {
-	color:#ffffff;
+	color:#000000;
 	background-color:transparent;
-	font-size:12px;
+	font-size:15px;
 	font-weight:bold;
 	text-decoration:none;
 	padding:5px 8px;
@@ -232,10 +241,16 @@ div.search-form
 }
 .span-19
 {
-	max-width: 700px;
+	/*min-width: 300px;*/
+	/*max-width: 560px;*/
 }
 
 
+/*---------footer-----------*/
+.copyright{
+	padding-top: 10px;
+	text-align: right;
+}
 
 .github{
 	width: 100px;
@@ -254,9 +269,12 @@ div.search-form
 	display: inherit;
 }
 
-/*-------форма авторизации ----------*/
+/*-------формы ----------*/
 
 #login-form label{
+	margin-right: 10px;
+}
+#login-form input{
 	margin-right: 10px;
 }
 #LoginForm_rememberMe{
@@ -288,4 +306,29 @@ div.search-form
 
 .buttons input:hover {
 	background-color: rgb( 75, 183, 141 );
+}
+
+
+#popups-form label{
+	margin-right: 15px;
+}
+
+
+.span-5{
+	max-width: 190px;
+}
+
+.no-active{
+	color: #ccc;
+}
+.no-active .btn-primary{
+	background: #ccc;
+	border: 1px solid #8fcacc;
+}
+
+#page .btn-success{
+	margin-top: 10px;
+}
+#page{
+	width: 100%;
 }

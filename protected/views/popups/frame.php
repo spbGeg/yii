@@ -37,8 +37,8 @@
 	//take modal window
     var modal = document.getElementById('myModal');
 
-    setTimeout(() => modal.style.display = "block", 1000); // show modal window
-    setTimeout(() => modal.style.display = "none", 4000); // hide modal window
+    setTimeout(() => modal.style.display = "block", 10000); // show modal window
+    setTimeout(() => modal.style.display = "none", 12000); // hide modal window
 
 
 

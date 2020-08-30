@@ -19,9 +19,11 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="row input-group">
 		<?php echo $form->labelEx($model,'name');?>
-		<?php echo $form->textField($model,'name',array('size'=>50,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'name',array(
+
+				)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
@@ -31,11 +33,7 @@
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'count_show'); ?>
-		<?php echo $form->textField($model,'count_show'); ?>
-		<?php echo $form->error($model,'count_show'); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>

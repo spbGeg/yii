@@ -3,7 +3,7 @@
 /* @var $data Popups */
 ?>
 
-<div class="view" >
+<div class="view <? if ($data->status == 0) echo "no-active"?>" >
 
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
@@ -18,11 +18,11 @@
     <?php if($data->count_show != NULL )echo CHtml::encode($data->count_show);
             else echo 0;?>
 	<br/>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<span style="color: #000;"><b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
     <?php if ($data->status != 0) echo "Активно";
     else echo "Неативно";
     ?>
-	<br/>
+	</span><br/>
 	<p><?php ?></p>
 
 	<p>Протестировать окно <a href='<?php echo CHtml::normalizeUrl(array('view', 'id' => $data->id)); ?>'>
