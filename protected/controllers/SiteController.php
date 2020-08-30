@@ -2,9 +2,14 @@
 
 class SiteController extends Controller
 {
+
+
 	/**
 	 * Declares class-based actions.
 	 */
+
+
+
 	public function actions()
 	{
 		return array(
@@ -28,11 +33,7 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
 
-//        $dataProvider=new CActiveDataProvider('Popups');
-//        $this->render('index',array(
-//            'dataProvider'=>$dataProvider
-//        ,
-//        ));
+
 
         $this->render('index');
 

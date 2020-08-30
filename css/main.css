@@ -35,8 +35,12 @@ body
 {
     padding: 20px;
 	min-height: 700px;
-	max-width: 540px;
+	/*max-width: 540px;*/
+	margin-top: 30px;
 
+}
+#content h1{
+	margin-bottom: 30px;
 }
 
 #sidebar
@@ -150,7 +154,7 @@ div.view
 div.breadcrumbs
 {
 	font-size: 0.9em;
-	padding: 5px 20px;
+	padding:  20px;
 }
 
 div.breadcrumbs span
@@ -241,8 +245,8 @@ div.search-form
 }
 .span-19
 {
-	/*min-width: 300px;*/
-	/*max-width: 560px;*/
+	min-width: 300px;
+	max-width: 560px;
 }
 
 
@@ -328,7 +332,16 @@ div.search-form
 
 #page .btn-success{
 	margin-top: 10px;
+	margin-left: 10px;
 }
+
 #page{
 	width: 100%;
+}
+#sidebar{
+	margin-left: 20px;
+}
+
+#yw0 .pager{
+	margin-top: 30px;
 }

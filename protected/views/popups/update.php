@@ -3,16 +3,16 @@
 /* @var $model Popups */
 
 $this->breadcrumbs=array(
-	'Popups'=>array('index'),
+	'Окошки'=>array('index'),
 	$model->name=>array('view','id'=>$model->id),
-	'Update',
+	'Изменить окошко',
 );
 
 $this->menu=array(
-	array('label'=>'List Popups', 'url'=>array('index')),
-	array('label'=>'Create Popups', 'url'=>array('create')),
-	array('label'=>'View Popups', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Popups', 'url'=>array('admin')),
+	array('label'=>'Список окошек', 'url'=>array('index')),
+	array('label'=>'Создать окошко', 'url'=>array('create')),
+	array('label'=>'Просмотреть окошко', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Изменить окошки', 'url'=>array('admin')),
 );
 ?>
 
