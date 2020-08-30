@@ -3209,3 +3209,87 @@ REQUEST_URI=/index.php?r=popups/update&id=1
 in D:\locallwebserver\domains\yii\protected\views\popups\_form.php (25)
 in D:\locallwebserver\domains\yii\protected\views\popups\update.php (21)
 in D:\locallwebserver\domains\yii\protected\controllers\PopupsController.php (129)
+2020/08/30 20:12:15 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/popups/frame&id=2
+HTTP_REFERER=http://html/
+---
+2020/08/30 20:12:35 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/popups/frame&id=2
+---
+2020/08/30 20:12:40 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.phppopups/frame&id=2
+---
+2020/08/30 20:12:40 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/popups/frame&id=2
+---
+2020/08/30 20:12:45 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/popups/frame&id=2
+HTTP_REFERER=http://html/
+---
+2020/08/30 20:12:47 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/popups/frame&id=2
+HTTP_REFERER=http://html/
+---
+2020/08/30 20:12:53 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/popups/frame&id=2
+HTTP_REFERER=http://html/
+---
+2020/08/30 20:13:03 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "frame&id=2". in D:\locallwebserver\domains\yii\framework\web\CController.php:486
+Stack trace:
+#0 D:\locallwebserver\domains\yii\framework\web\CController.php(270): CController->missingAction('frame&id=2')
+#1 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(282): CController->run('frame&id=2')
+#2 D:\locallwebserver\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('popups/frame&id...')
+#3 D:\locallwebserver\domains\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\locallwebserver\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/popups/frame&id=2
+---
