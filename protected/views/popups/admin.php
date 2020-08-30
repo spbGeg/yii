@@ -3,13 +3,13 @@
 /* @var $model Popups */
 
 $this->breadcrumbs=array(
-	'Popups'=>array('index'),
-	'Manage',
+	'Окошки'=>array('index'),
+	'Изменить окошки',
 );
 
 $this->menu=array(
-	array('label'=>'List Popups', 'url'=>array('index')),
-	array('label'=>'Create Popups', 'url'=>array('create')),
+	array('label'=>'Список окошек', 'url'=>array('index')),
+	array('label'=>'Создать окошко', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -33,7 +33,7 @@ $('.search-form form').submit(function(){
 or <b>=</b>) для быстрого поиска.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Дополнительные параметры поиска','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
