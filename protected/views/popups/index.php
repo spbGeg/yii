@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Popups', 'url'=>array('create')),
-	array('label'=>'Manage Popups', 'url'=>array('admin')),
+	array('label'=>'Создать Окошко', 'url'=>array('create')),
+	array('label'=>'Изменить Окошки', 'url'=>array('admin')),
 );
 ?>
 
@@ -19,10 +19,13 @@ $this->menu=array(
 
 <?php
 
-//print_r($dataProvider->Popup);
+
 
 
 $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+	'viewData'    => array(
+			'code'  =>  $code
+	),
 )); ?>

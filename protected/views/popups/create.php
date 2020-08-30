@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Popups', 'url'=>array('index')),
-	array('label'=>'Manage Popups', 'url'=>array('admin')),
+	array('label'=>'Список Окошек', 'url'=>array('index')),
+	array('label'=>'Изменить Окошки', 'url'=>array('admin')),
 );
 ?>
 

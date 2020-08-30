@@ -8,19 +8,20 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-    array('label' => 'List Popups', 'url' => array('index')),
-    array('label' => 'Create Popups', 'url' => array('create')),
-    array('label' => 'Update Popups', 'url' => array('update', 'id' => $model->id)),
-    array('label' => 'Delete Popups', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Вы действительно хотите удалить окно?')),
-    array('label' => 'Manage Popups', 'url' => array('admin')),
+    array('label' => 'Список окошек', 'url' => array('index')),
+    array('label' => 'Создать окно', 'url' => array('create')),
+    array('label' => 'Обновить окно', 'url' => array('update', 'id' => $model->id)),
+    array('label' => 'Удалить', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Вы действительно хотите удалить окно?')),
+    array('label' => 'Изменить окошки', 'url' => array('admin')),
 );
 ?>
 
 <h1>Имя окна: <?php echo $model->name; ?></h1>
 
-<?php if( $model->status == 1){ ?>
+<?php if( $model->status == 1){?>
 
 <p>Для того чтобы снова увидеть модальное окно перезагрузите страницу</p>
+
 
 <div id="myModal" class="modal" style="display:none;">
 
@@ -56,13 +57,4 @@ $this->menu = array(
 	 }?>
 
 
-<?php /*$this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'name',		'name'=> array(			'label'=> 'Имя окна',			'type' => 'raw',			'value' => $model->name,			),
-		'description',
-		'count_show',
-		'status',
-	),
-)); */ ?>
+
